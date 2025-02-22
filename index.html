@@ -6,21 +6,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Lo-Fi GenAI Jungle</h1>
-  <div class="slideshow-container">
-    <!-- Image display -->
-    <img id="slideshow-image" src="Images/animal_001.png" alt="Slideshow Image">
-
-    <!-- Phrase display -->
-    <div id="phrase"></div>
-
-    <!-- Audio player -->
-    <audio id="slideshow-audio" controls>
-      <source src="Sound/imagined_animal_sound_1.wav" type="audio/wav">
-      Your browser does not support the audio element.
-    </audio>
+  <div class="container">
+    <h1>Lo-Fi GenAI Jungle</h1>
+    <div class="slideshow-container">
+      <!-- Image display -->
+      <img id="slideshow-image" src="Images/animal_001.png" alt="Slideshow Image">
+      <!-- Phrase display -->
+      <div id="phrase"></div>
+      <!-- Audio player -->
+      <audio id="slideshow-audio">
+        <source src="Sound/imagined_animal_sound_1.wav" type="audio/wav">
+        Your browser does not support audio.
+      </audio>
+    </div>
+    <button id="startButton">Start Slideshow</button>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>

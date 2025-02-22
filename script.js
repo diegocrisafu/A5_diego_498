@@ -82,7 +82,7 @@ const slides = [
   }
 ];
 
-// Keep track of the current slide index
+// Global variable to track the current slide index
 let currentSlideIndex = 0;
 let slideInterval;
 
@@ -91,38 +91,43 @@ const slideshowImage = document.getElementById("slideshow-image");
 const slideshowAudio = document.getElementById("slideshow-audio");
 const phraseContainer = document.getElementById("phrase");
 
-// Function to update the slideshow content
+// Function to update the slideshow content and auto-play sound
 function showSlide(index) {
-  // Stop and reset any previously playing audio
+  // Stop and reset any currently playing audio
   slideshowAudio.pause();
   slideshowAudio.currentTime = 0;
 
-  // Load the new slide
+  // Update image, sound, and phrase based on the current slide
   const slide = slides[index];
   slideshowImage.src = slide.image;
   slideshowAudio.src = slide.sound;
   phraseContainer.textContent = slide.phrase;
 
-  // Attempt to auto-play audio
-  // Note: Some browsers block auto-play unless user interacts with the page
-  slideshowAudio.load();
-  slideshowAudio.play().catch(err => {
-    console.log("Auto-play was blocked or didn't work:", err);
-  });
+  // Attempt to auto-play audio after a brief delay
+  setTimeout(() => {
+    slideshowAudio.play().catch(err => {
+      console.log("Auto-play blocked:", err);
+    });
+  }, 500);
 }
 
-// Function to go to the next slide
+// Function to go to the next slide and stop previous audio
 function nextSlide() {
   currentSlideIndex = (currentSlideIndex + 1) % slides.length;
   showSlide(currentSlideIndex);
 }
 
-// Initialize the slideshow
+// Initialize the slideshow after user interaction
 function initSlideshow() {
   showSlide(currentSlideIndex);
   // Change slides every 10 seconds
   slideInterval = setInterval(nextSlide, 10000);
 }
 
-// Start the slideshow once the page loads
-window.addEventListener("load", initSlideshow);
+// Wait for the user to click the "Start" button (to satisfy browser auto-play policies)
+document.getElementById("startButton").addEventListener("click", function () {
+  // Hide the start button
+  this.style.display = "none";
+  // Initialize the slideshow
+  initSlideshow();
+});
