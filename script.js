@@ -93,19 +93,22 @@ const phraseContainer = document.getElementById("phrase");
 
 // Function to update the slideshow content
 function showSlide(index) {
-  // Stop and reset the audio from the previous slide
+  // Stop and reset any previously playing audio
   slideshowAudio.pause();
   slideshowAudio.currentTime = 0;
 
-  // Update image, audio, and phrase for the current slide
+  // Load the new slide
   const slide = slides[index];
   slideshowImage.src = slide.image;
   slideshowAudio.src = slide.sound;
   phraseContainer.textContent = slide.phrase;
 
-  // If you wanted auto-play, you'd uncomment the lines below:
-  // slideshowAudio.load();
-  // slideshowAudio.play();
+  // Attempt to auto-play audio
+  // Note: Some browsers block auto-play unless user interacts with the page
+  slideshowAudio.load();
+  slideshowAudio.play().catch(err => {
+    console.log("Auto-play was blocked or didn't work:", err);
+  });
 }
 
 // Function to go to the next slide
