@@ -3,82 +3,82 @@ const slides = [
   {
     image: "Images/animal_010.png",
     sound: "Sound/imagined_animal_sound_1.wav",
-    phrase: "1. Zuurak: 'I hunger for the rain.'"
+    phrase: "1. Zuurak el duralal: 'I hunger for the rain.'"
   },
   {
     image: "Images/animal_013.png",
     sound: "Sound/imagined_animal_sound_5.wav",
-    phrase: "2. Gruln: 'The wind whispers secrets.'"
+    phrase: "2. Gruln al bok: 'The wind whispers secrets.'"
   },
   {
     image: "Images/animal_024.png",
     sound: "Sound/imagined_animal_sound_3.wav",
-    phrase: "3. Kukul: 'The jungle sings softly.'"
+    phrase: "3. Kukul ku o: 'The jungle sings softly.'"
   },
   {
     image: "Images/animal_049.png",
     sound: "Sound/imagined_animal_sound_4.wav",
-    phrase: "4. Nukur: 'Shadows dance in the rain.'"
+    phrase: "4. Nukur o le: 'Shadows dance in the rain.'"
   },
   {
     image: "Images/animal_050.png",
     sound: "Sound/imagined_animal_sound_1.wav",
-    phrase: "5. Xorak: 'The earth murmurs in twilight.'"
+    phrase: "5. Xorak xo pa: 'The earth murmurs in twilight.'"
   },
   {
     image: "Images/animal_003.png",
     sound: "Sound/imagined_animal_sound_2.wav",
-    phrase: "6. Krura: 'Echoes of distant thunder.'"
+    phrase: "6. Krur kura: 'Echoes of distant thunder.'"
   },
   {
     image: "Images/animal_004.png",
     sound: "Sound/imagined_animal_sound_3.wav",
-    phrase: "7. Ulreth: 'Moonlight guides my roar.'"
+    phrase: "7. Ulreth el lopa: 'Moonlight guides my roar.'"
   },
   {
     image: "Images/animal_047.png",
     sound: "Sound/imagined_animal_sound_4.wav",
-    phrase: "8. Fezzik: 'Gentle winds carry my call.'"
+    phrase: "8. Fezzik ta sa: 'Gentle winds carry my call.'"
   },
   {
     image: "Images/animal_043.png",
     sound: "Sound/imagined_animal_sound_1.wav",
-    phrase: "9. Grolth: 'Mossy stones speak my name.'"
+    phrase: "9. Grolth oli ampinu: 'Mossy stones speak my name.'"
   },
   {
     image: "Images/animal_003.png",
     sound: "Sound/imagined_animal_sound_2.wav",
-    phrase: "10. Hurraak: 'I run with silent paws.'"
+    phrase: "10. Hurraak tra la: 'I run with silent paws.'"
   },
   {
     image: "Images/animal_004.png",
     sound: "Sound/imagined_animal_sound_5.wav",
-    phrase: "11. Daroon: 'Morning dew cloaks my presence.'"
+    phrase: "11. Daroon noono: 'Morning dew cloaks my presence.'"
   },
   {
     image: "Images/animal_010.png",
     sound: "Sound/imagined_animal_sound_4.wav",
-    phrase: "12. Zirn: 'Clouds echo my heartbeat.'"
+    phrase: "12. Zirn la fa: 'Clouds echo my heartbeat.'"
   },
   {
     image: "Images/animal_013.png",
     sound: "Sound/imagined_animal_sound_1.wav",
-    phrase: "13. Tolreth: 'I whisper to the ancient trees.'"
+    phrase: "13. Tolreth la so: 'I whisper to the ancient trees.'"
   },
   {
     image: "Images/animal_024.png",
     sound: "Sound/imagined_animal_sound_2.wav",
-    phrase: "14. Wuln: 'Crickets sing in my wake.'"
+    phrase: "14. Wuln: pa lo 'Crickets sing in my wake.'"
   },
   {
     image: "Images/animal_043.png",
     sound: "Sound/imagined_animal_sound_5.wav",
-    phrase: "15. Zeln: 'Nightfall stirs my senses.'"
+    phrase: "15. Zeln chi ni: 'Nightfall stirs my senses.'"
   },
   {
     image: "Images/animal_049.png",
     sound: "Sound/imagined_animal_sound_4.wav",
-    phrase: "16. Quenra: 'The horizon trembles at dawn.'"
+    phrase: "16. Quenra la waq: 'The horizon trembles at dawn.'"
   }
 ];
 
