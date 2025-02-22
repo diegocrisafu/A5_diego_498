@@ -7,7 +7,7 @@ const slides = [
   },
   {
     image: "Images/animal_013.png",
-    sound: "Sound/imagined_animal_sound_2.wav",
+    sound: "Sound/imagined_animal_sound_5.wav",
     phrase: "2. Gruln: 'The wind whispers secrets.'"
   },
   {
@@ -52,7 +52,7 @@ const slides = [
   },
   {
     image: "Images/animal_004.png",
-    sound: "Sound/imagined_animal_sound_3.wav",
+    sound: "Sound/imagined_animal_sound_5.wav",
     phrase: "11. Daroon: 'Morning dew cloaks my presence.'"
   },
   {
@@ -72,7 +72,7 @@ const slides = [
   },
   {
     image: "Images/animal_043.png",
-    sound: "Sound/imagined_animal_sound_3.wav",
+    sound: "Sound/imagined_animal_sound_5.wav",
     phrase: "15. Zeln: 'Nightfall stirs my senses.'"
   },
   {
